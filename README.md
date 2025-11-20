@@ -222,5 +222,43 @@ The final goal is the valorization of data for decision-makers:
 
 
 
+# This is about numbers and variables to be remembered
+
+
+Ah, focusing on the numerical constants and quantifiable rules is an excellent strategy for multiple-choice questions! These specific details often form the basis of tricky comparisons or definitions.
+
+Here are the crucial numbers, variables, and concrete metrics extracted from the course materials that you must commit to memory for the exam:
+
+### 1. Big Data Scale and Speed Metrics
+
+| Metric/Constant | Value or Ratio | Context | Source(s) |
+| :--- | :--- | :--- | :--- |
+| **Big Data Scale** | Gigabytes, Terabytes, Petabytes | Sizes of datasets that exceed single-machine capability. | |
+| **Spark Speed (In-Memory)** | Up to **100x** faster | Compared to Hadoop MapReduce when processing data in memory. | |
+| **Spark Speed (On Disk)** | **10x** faster | Compared to Hadoop MapReduce when processing data on disk. | |
+| **Batch Latency** | Minutes or hours (to days) | Typical latency for Batch Processing. | |
+| **Streaming Latency** | Milliseconds to seconds | Typical latency for Stream Processing. | |
+| **Fraud Detection Latency SLA** | Less than **200ms** | Example requirement for critical real-time systems like credit card fraud detection. | |
+
+### 2. File Storage and Configuration Variables
+
+| Metric/Constant | Value or Variable | Context | Source(s) |
+| :--- | :--- | :--- | :--- |
+| **HDFS Replication Factor**| **3** | Mentioned as the default or typical replication number used for fault tolerance. | |
+| **Optimal File Size (Parquet/ORC)** | **128–256 MB** | Recommended file size range for efficient parallel reads in cloud storage/data lakes. | |
+| **Shuffle Partition Variable** | `spark.sql.shuffle.partitions = 200`| Example configuration parameter used to increase parallelism and manage data skew during shuffles. | |
+| **Spark Streaming Trigger** | Example: `Trigger.ProcessingTime("10 seconds")` | Controls how often the micro-batch engine executes. | |
+| **Spark Streaming Watermark (Example)**| **10 minutes** | Example duration used to specify how long to wait for late data before discarding state. | |
+
+### 3. Machine Learning and Visualization Specifics
+
+| Metric/Constant | Value or Ratio | Context | Source(s) |
+| :--- | :--- | :--- | :--- |
+| **MFCC Coefficients** | Typically **13–20** coefficients | The size of the compact vector produced per audio frame for speech/audio features. | |
+| **GPT-4 GPU Count** | **10,000+** A100s | Illustrates the massive scale of distributed DL training. | |
+| **Visualization Integrity Rule** | **Zero (0)** | Bar charts must **start at zero** to maintain proportional comparisons and avoid misleading visuals. | |
+| **Visualization Clarity Goal** | **5 seconds** | The maximum time frame in which someone should be able to understand the main message of a chart. | |
+
+Remember these numerical anchor points! They are highly testable details that demonstrate a precise understanding of system configurations and performance expectations. Good luck!
 
 
